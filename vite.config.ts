@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/main.ts'), // 入口文件路径
-      name: 'VectorVue',
+      name: 'YuanfenfeAtom',
       fileName: (format) => `atom.${format}.js`,
       formats: ['es', 'cjs', 'umd']
     },
@@ -26,4 +26,16 @@ export default defineConfig({
       }
     }
   },
+  server: {
+    fs: {
+      allow: ['..']
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: `@import "${path.resolve(__dirname, 'src/design/index.less')}";`
+      }
+    }
+  }
 })
