@@ -30,6 +30,7 @@
     "@storybook/addon-interactions": "^8.3.2",
     "@storybook/addon-links": "^8.3.2",
     "@storybook/addon-onboarding": "^8.3.2",
+    "@storybook/addon-storysource": "^8.3.3",
     "@storybook/blocks": "^8.3.2",
     "@storybook/test": "^8.3.2",
     "@storybook/vue3": "^8.3.3",
